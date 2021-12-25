@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JQUERY -->
+    <title>Form</title>
+</head>
+<body>
+    <header class="header">
+        <img src="img/lacasaheader.png" alt="Top slika" class="top_slika">
+
+        <ion-icon name="menu-outline" class="header_toggle" id="nav-toggle"></ion-icon>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav_content bd-grid">
+
+                <ion-icon name="close-outline" class="nav_close" id="nav-close"></ion-icon>
+
+                <div class="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="index.html" class="nav_link active">Home</a></li>
+                        <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
+                        <li class="nav_item"><a href="characters.html" class="nav_link">Cast and characters</a></li>
+                        <li class="nav_item"><a href="form.html" class="nav_link">Form</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class = "forms" >
+        <form name="mform" method = "post" id="myform" onsubmit="return validateForm()">
+            <p class ="ftext">First name:</p>
+            <input type="text"  name = "fname" placeholder="Your first name..."><br><br>
+            <p class ="ftext">Last name:</p>
+            <input type="text"  name = "lname"placeholder="Your last name..."><br><br>
+
+            <p  class = "ftext">E-mail: </p>
+            <input type="email" name="mail"  placeholder="e-mail"><br><br>
+
+
+            <input type="radio" name = "gander" value="Male"><span>Male</span><br>
+            <input type="radio" name = "gander" value="Female"><span>Female</span><br><br>
+
+            <p  class = "ftext"> Date of birth: </p>
+            <input type="date" name="date" id="date"><br>
+
+            <!-- <input type="submit" value="SUBMIT" class="dugme-forma"> -->
+            <!-- <button id="prijava">SUBMIT</button> -->
+            <br><br><br><br>
+        
+            <p  class = "ftext">Choose your favorite part:</p>
+            <select name="parts">
+                <option value="first">Season 1</option>
+                <option value="second">Season 2</option>
+                <option value="third">Season 3</option>
+                <option value="fourth">Season 4</option>
+                <option value="fifth" selected>Season 5</option>
+            </select> 
+            <br><br>
+
+            <p class = "ftext">Choose your favorite character: </p>
+            <select name="partss">
+                <option value="pro" selected>Professor</option>
+                <option value="ber">Berlin</option>
+                <option value="nai" >Nairobi</option>
+                <option value="tok">Tokyo</option>
+                <option value="pal">Palermo</option>
+                <option value="den">Denver</option>
+                <option value="hel">Helsinki</option>
+                <option value="bog">Bogota</option>
+                <option value="rio">Rio</option>
+                <option value="mar">Marseille</option>
+                <option value="lis">Lisbon</option>
+                <option value="sto">Stockholm</option>
+            </select> 
+            <br>
+
+            <!-- </b><input type="submit" value="SUBMIT" class="dugme-forma"> -->
+            <button id="prijava">SUBMIT</button>
+        </form>
+    </div>
+    
+    <div class="footer_container">
+        <div class="footer-items">
+            <a href="https://www.instagram.com/lacasadepapel/" target="_blank"><img
+                    src="https://img.icons8.com/doodle/48/000000/instagram-new.png" / class="doodle"></a>
+            <a href="https://www.youtube.com/channel/UCI9tBPaYZ8kJEU0PaQLWfEw" target="_blank"><img
+                    src="https://img.icons8.com/doodle/48/000000/youtube-play--v1.png" / class="doodle"></a>
+            <a href="https://www.netflix.com/rs/title/80192098" target="_blank"><img
+                    src="https://img.icons8.com/doodle/48/000000/netflix-desktop-app.png" / class="doodle"></a>
+        </div>
+    </div>
+
+    <!-- ion icon -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
